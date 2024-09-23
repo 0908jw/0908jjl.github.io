@@ -2,8 +2,8 @@ body {
     background-image: url('https://cdn.mos.cms.futurecdn.net/nT6eb3GNFQJ6AerZkWVqBo-320-80.gif');
     background-size: cover;
     height: 100vh;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
 #hello {
@@ -13,13 +13,68 @@ body {
     font-size: 500%;
     color: whitesmoke;
     text-align: center;
-     text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+    text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+    margin-top: 20px;
 }
 
 .ex {
     display: block;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "lores-22-serif", sans-serif;
+    font-weight: 700;
     font-style: normal;
     text-align: center;
-    color: bisque;
+}
+
+.circle-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 200px);
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    animation: moveCircle 10s infinite;
+    box-shadow: 0 0 20px 10px rgba(233, 233, 233, 0.6), 
+                0 0 40px 20px rgba(108, 108, 108, 0.4),
+                0 0 60px 30px rgba(46, 46, 46, 0.2);
+}
+
+.circle:nth-child(1) {
+    top: 20%;
+    left: 10%;
+    background: radial-gradient(circle, rgba(255, 200, 150, 1) 0%, rgba(100, 255, 150, 1) 100%);
+}
+
+.circle:nth-child(2) {
+    top: 50%;
+    left: 30%;
+    background: radial-gradient(circle, rgb(255, 102, 102) 0%, rgb(229, 170, 255) 100%);
+}
+
+.circle-text {
+    position: relative;
+    z-index: 1;
+    color: black;
+    text-decoration: none;
+}
+
+@keyframes moveCircle {
+    0% {
+        transform: translate(0, 0);
     }
+    50% {
+        transform: translate(20px, -20px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
