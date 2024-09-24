@@ -53,6 +53,11 @@ h1 {
     min-width: 300px;
     padding: 1%;
   }
+
+  .quote:hover {
+    color: blue;
+    text-shadow: rgb(178, 206, 255) 1px 0 10px;
+  }
   
 hr {
   border: 1px dashed black;

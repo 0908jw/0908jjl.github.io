@@ -3,5 +3,5 @@ div {
     height: 200ps;
     background-color: red;
     transform: translate(20px);
-    <!-- transform-origin: -50% -50%; -->
+    transform-origin: -50% -50%;
 }
