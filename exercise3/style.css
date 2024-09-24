@@ -52,6 +52,8 @@ h1 {
     border-color: blue; 
     min-width: 300px;
     padding: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   
 hr {
