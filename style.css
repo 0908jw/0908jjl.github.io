@@ -43,9 +43,16 @@ body {
     font-size: 20px;
     font-weight: bold;
     animation: moveCircle 10s infinite;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.circle:hover {
     box-shadow: 0 0 20px 10px rgba(233, 233, 233, 0.6), 
-                0 0 40px 20px rgba(108, 108, 108, 0.4),
-                0 0 60px 30px rgba(46, 46, 46, 0.2);
+    0 0 40px 20px rgba(108, 108, 108, 0.4),
+    0 0 60px 30px rgba(46, 46, 46, 0.2);
+    transition: all .4s ease;
 }
 
 .circle:nth-child(1) {
@@ -64,14 +71,6 @@ body {
     top: 50%;
     left: 50%;
     background: radial-gradient(circle, rgb(120, 134, 255) 0%, rgb(230, 170, 255) 100%);
-}
-
-
-.circle-text {
-    position: relative;
-    z-index: 1;
-    color: black;
-    text-decoration: none;
 }
 
 @keyframes moveCircle {
