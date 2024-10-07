@@ -362,6 +362,7 @@ body {
   position: relative;
   text-align: center;
 
+
   &::before,
   &::after {
     content: '';
