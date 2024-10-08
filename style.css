@@ -73,6 +73,25 @@ body {
     background: radial-gradient(circle, rgb(120, 134, 255) 0%, rgb(230, 170, 255) 100%);
 }
 
+.circle:nth-child(4) {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    animation: moveCircle 10s infinite;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    top: 49%;
+    left: 60%;
+    background: radial-gradient(circle, rgb(88, 105, 255) 0%, rgb(210, 104, 255) 100%);
+}
+
 @keyframes moveCircle {
     0% {
         transform: translate(0, 0);
