@@ -1,9 +1,42 @@
 body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+#background-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
     background-image: url('https://cdn.mos.cms.futurecdn.net/nT6eb3GNFQJ6AerZkWVqBo-320-80.gif');
     background-size: cover;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
+    background-position: center;
+    transition: background-image 0.5s ease;
+}
+
+.button-container{
+    position: relative; 
+    width: 100%;
+    height: 0;
+}
+
+button {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    font-size: 20px;
+    font-family: "lores-22-serif", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-style: normal;
+    background-color: transparent;
+}
+
+.invert-bg {
+    filter: invert(1);
+    transition: filter 0.5s ease;
 }
 
 #hello {
