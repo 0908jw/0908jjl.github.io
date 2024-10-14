@@ -9,7 +9,9 @@ $(document).ready(function() {
                 'text-shadow': '1px 1px 10px #fff, 1px 1px 10px #ccc'
             });
             $('#toggle').text('Light mode');
+            
         } else {
+
             $('#background-container').css({
                 'background-image': 'url(./image/whiteversion.gif)',
                 'background-size': 'cover',         
@@ -20,6 +22,7 @@ $(document).ready(function() {
                 'color': '#000000',
                 'text-shadow': '2px 2px 20px #000000, 2px 2px 20px #000000'
             });
+
             $('#toggle').text('Dark mode');
         }
         isToggled = !isToggled;
