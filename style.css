@@ -13,6 +13,7 @@ body {
     background-image: url('https://cdn.mos.cms.futurecdn.net/nT6eb3GNFQJ6AerZkWVqBo-320-80.gif');
     background-size: cover;
     background-position: center;
+    /* filter: invert(1); */
     transition: background-image 0.5s ease;
 }
 
